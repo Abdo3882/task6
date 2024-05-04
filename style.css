@@ -1,0 +1,44 @@
+.par{
+    background-color: rgb(93, 93, 98);
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.par div{
+    width: 120px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div1{
+    background-color: aqua;
+    z-index: 1;
+}
+.div2{
+    background-color: antiquewhite;
+    z-index: 2;
+}
+.div3{
+    background-color: blueviolet;
+    z-index: 3;
+}
+.div4{
+    background-color: cadetblue;
+    z-index: 4;
+}
+.div1, .div3 {
+    align-self: flex-end;
+}
+.div1:hover , .div3:hover{
+    align-self: flex-start;
+    right: 20px;
+    transform: translateX(160px);
+}
+.div2:hover{
+    align-self: flex-end;
+    right: 20px;
+    transform: translateX(160px);
+}
+
